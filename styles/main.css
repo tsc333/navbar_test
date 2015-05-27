@@ -29,14 +29,15 @@ body {
   border-radius: 5px;
   z-index: 5;
 
-  -webkit-transition: background-color .1s ease-out;
-  -moz-transition: background-color .1s ease-out;
-  -o-transition: background-color .1s ease-out;
-  transition: background-color .1s ease-out;
+  -webkit-transition: background-color, border .1s ease-out;
+  -moz-transition: background-color, border .1s ease-out;
+  -o-transition: background-color, border .1s ease-out;
+  transition: background-color, border .1s ease-out;
 }
 
 #nav_toggle:hover {
   background-color: #333;
+  border: 2px solid #333;
 }
 
 #navbar ul {
@@ -54,4 +55,12 @@ body {
 
 .float_right {
   float: right;
+}
+
+.menu_open {
+  right: 200px
+}
+
+.menu_closed {
+  right: 0px;
 }
