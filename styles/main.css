@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+body {
+  background-color: #333;
+  color: white;
+  font-family: 'Lato', times;
+  font-weight: 100;
+}
+
+#main_content {
+  background-color: #777;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#nav_toggle {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/list.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 5px;
+  z-index: 5;
+
+  -webkit-transition: background-color .1s ease-out;
+  -moz-transition: background-color .1s ease-out;
+  -o-transition: background-color .1s ease-out;
+  transition: background-color .1s ease-out;
+}
+
+#nav_toggle:hover {
+  background-color: #333;
+}
+
+#navbar ul {
+  position: fixed;
+  list-style: none;
+  right: 10px;
+  top: 20px;
+
+}
+
+#navbar ul li {
+  color: white;
+  font-size: 30px;
+}
+
+.float_right {
+  float: right;
+}
