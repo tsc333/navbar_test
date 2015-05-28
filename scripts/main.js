@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
-  $("#nav_toggle").click( function(event){
-      event.preventDefault();
-      if ( $('#main_content').hasClass("isDown") ) {
-          $("#nav").stop().animate({marginTop:"-100px"}, 200);
-      } else {
-          $("#nav").stop().animate({marginTop:"0px"}, 200);
+  $("#nav_toggle").click(function(){
+      if ($('#main_content').hasClass("menu_closed")) {
+          $("#main_content").animate({right:"200px"}, 'fast');
+          $( "#main_content" ).removeClass( "menu_closed" ).addClass( "menu_open" );
       }
-      $(this).toggleClass("isDown");
-      return false;
+      else if($('#main_content').hasClass("menu_open")){
+          $("#main_content").animate({right:"0px"}, 'fast');
+          $( "#main_content" ).removeClass( "menu_open" ).addClass( "menu_closed" );
+      }
   });
 });
