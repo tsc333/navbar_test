@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $("#nav_toggle").click(function(){
+  $("#nav_toggle").click(function(event){
       if ($('#main_content').hasClass("menu_closed")) {
           $("#main_content").animate({right:"200px"}, 'fast');
           $( "#main_content" ).removeClass( "menu_closed" ).addClass( "menu_open" );
