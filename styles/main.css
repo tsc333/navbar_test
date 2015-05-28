@@ -8,12 +8,20 @@ body {
 }
 
 #main_content {
-  background-color: #777;
+  background-color: #555;
   position: fixed;
   top: 0;
   right: 0;
   height: 100%;
   width: 100%;
+}
+
+#page_title {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  top: 40%;
 }
 
 #nav_toggle {
